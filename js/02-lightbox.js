@@ -28,13 +28,13 @@ function onImageContainerClick(e) {
     if (!isPreviewImage) {
         return;
     }
-    // настройки с библиотеки  SimpleLightbox
-    const lightbox = new SimpleLightbox('.gallery a', {
-    
-        captionsData: 'alt', //получить заголовок из данного атрибута
-        captionDelay: 250    //задержка перед отображением подписи
-        
-    });
 }
 
+// настройки с библиотеки  SimpleLightbox
+new SimpleLightbox('.gallery a', {
+
+    captionsData: 'alt', //получить заголовок из данного атрибута
+    captionDelay: 250    //задержка перед отображением подписи
+    
+});
 // console.log(galleryItems);
